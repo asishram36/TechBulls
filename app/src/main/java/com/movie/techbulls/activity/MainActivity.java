@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
                                 String type = content.getString("Type");
                                 String poster = content.getString("Poster");
 
-                                movieList.add(new MovieListDataModel(poster, title, year));
+                                movieList.add(new MovieListDataModel(poster, title, year, type));
 
                             }
 

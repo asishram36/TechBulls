@@ -2,12 +2,13 @@ package com.movie.techbulls.model;
 
 public class MovieListDataModel {
 
-    String imageUrl, movieName, movieYear;
+    String imageUrl, movieName, movieYear, type;
 
-    public MovieListDataModel(String imageUrl, String movieName, String movieYear) {
+    public MovieListDataModel(String imageUrl, String movieName, String movieYear, String type) {
         this.imageUrl = imageUrl;
         this.movieName = movieName;
         this.movieYear = movieYear;
+        this.type = type;
     }
 
     public String getImageUrl() {
@@ -32,5 +33,13 @@ public class MovieListDataModel {
 
     public void setMovieYear(String movieYear) {
         this.movieYear = movieYear;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

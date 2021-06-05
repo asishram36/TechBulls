@@ -134,10 +134,12 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.MyHo
                 for (int i = 0; i < mFilteredList.size(); i++) {
 
                     if (mFilteredList.get(i).getMovieName().toLowerCase().contains(constraint) ||
-                            mFilteredList.get(i).getMovieYear().toLowerCase().contains(constraint)) {
+                            mFilteredList.get(i).getMovieYear().toLowerCase().contains(constraint) ||
+                            mFilteredList.get(i).getType().toLowerCase().contains(constraint)) {
 
                         MovieListDataModel dm = new MovieListDataModel(mFilteredList.get(i).getImageUrl(),
-                                mFilteredList.get(i).getMovieName(), mFilteredList.get(i).getMovieYear());
+                                mFilteredList.get(i).getMovieName(), mFilteredList.get(i).getMovieYear(),
+                                mFilteredList.get(i).getType());
 
                         filters.add(dm);
                     }
